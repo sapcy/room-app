@@ -5,9 +5,7 @@ import cardImage from "../../public/sample.jpg";
 import styles from "../../styles/Home.module.css";
 
 const imageLoader = ({ src, width, quality }) => {
-  return `http://image.goodchoice.kr/resize_490x348/affiliate/2019/06/12/${src}?w=${width}&q=${
-    quality || 75
-  }`;
+  return `http://${src}?w=${width}&q=${quality || 75}`;
 };
 
 const RatingScorePer = (score) => {
@@ -16,16 +14,14 @@ const RatingScorePer = (score) => {
 
 const RatingScoreStar = (props) => {
   return (
-    <div className={styles.placeListScore_container}>
-      <div className={styles.placeListScore_rating}>
-        <span className={styles.placeListScore_ratingStars}>
-          <i
-            className={styles.placeListScore_stars}
-            style={{ width: RatingScorePer(props.ratingScoreAvg) }}
-          ></i>
-          {props.ratingScoreAvg}
-        </span>
-      </div>
+    <div className="row">
+      <span className={styles.placeListScore_ratingStars}>
+        <i
+          className={styles.placeListScore_stars}
+          style={{ width: RatingScorePer(props.ratingScoreAvg) }}
+        ></i>
+      </span>
+      {props.ratingScoreAvg}
     </div>
   )
 }
@@ -40,16 +36,18 @@ const Card = (props) => {
       <div className={styles.grid}>
         <div className={styles.card}>
           <Image
-            className="card-img"
-            // lodaer={imageLoader}
-            // src={props.images}
-            src={cardImage}
+            loader={props.images ? imageLoader : null}
+            src={props.images ? props.images[0] : cardImage}
+            // src={cardImage}
             alt="room"
             width={150}
             height={150}
           />
-          <h3>{props.propertyName}</h3>
+          <h4>{props.propertyName}</h4>
+          <p style={{fontSize: 15}}>{props.roomName}</p>
+          <p style={{fontSize: 15}}>최대인원 : {props.maxUser}명</p>
           <RatingScoreStar ratingScoreAvg={props.ratingScoreAvg} />
+          <p style={{fontSize: 15, textAlign: "right"}}>{props.price}원</p>
         </div>
       </div>
     </>
