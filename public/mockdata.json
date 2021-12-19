@@ -1,0 +1,68 @@
+{
+  "roomDocumentList": [
+    {
+      "roomId": 0,
+      "propertyName": "가평 펜션",
+      "propertyType": "펜션",
+      "address": "가평 읍리 가평동 160-3",
+      "images": [],
+      "ratingScoreAvg": 4.6
+    },
+    {
+      "roomId": 1,
+      "propertyName": "가평 펜션",
+      "propertyType": "펜션",
+      "address": "가평 읍리 가평동 160-3",
+      "images": [],
+      "ratingScoreAvg": 3.8
+    },
+    {
+      "roomId": 2,
+      "propertyName": "가평 펜션",
+      "propertyType": "펜션",
+      "address": "가평 읍리 가평동 160-3",
+      "images": [],
+      "ratingScoreAvg": 3.1
+    },
+    {
+      "roomId": 3,
+      "propertyName": "가평 펜션",
+      "propertyType": "펜션",
+      "address": "가평 읍리 가평동 160-3",
+      "images": [],
+      "ratingScoreAvg": 4.8
+    },
+    {
+      "roomId": 4,
+      "propertyName": "가평 펜션",
+      "propertyType": "펜션",
+      "address": "가평 읍리 가평동 160-3",
+      "images": [],
+      "ratingScoreAvg": 4.4
+    },
+    {
+      "roomId": 5,
+      "propertyName": "가평 펜션",
+      "propertyType": "펜션",
+      "address": "가평 읍리 가평동 160-3",
+      "images": [],
+      "ratingScoreAvg": 2.1
+    },
+    {
+      "roomId": 6,
+      "propertyName": "가평 펜션",
+      "propertyType": "펜션",
+      "address": "가평 읍리 가평동 160-3",
+      "images": [],
+      "ratingScoreAvg": 5.0
+    },
+    {
+      "roomId": 7,
+      "propertyName": "가평 펜션",
+      "propertyType": "펜션",
+      "address": "가평 읍리 가평동 160-3",
+      "images": [],
+      "ratingScoreAvg": 2.3
+    }
+  ]
+}
